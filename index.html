@@ -18,47 +18,7 @@
 
     </head>
 
-    <body style="margin:0px; overflow:hidden;">
-
-        <!-- カーソルを追加 -->
-         <a-camera>
-                <a-cursor fuse="true" color="white" scale="2 2">
-                    <a-animation 
-                         begin="mouseenter" 
-                         easing="ease-out" 
-                         attribute="scale" 
-                         fill="forwards" 
-                         from="2 2 2" 
-                         to="1 1 1" 
-                         dur="300">
-                    </a-animation>
-                    <a-animation 
-                         begin="mouseenter"
-                         attribute="color" 
-                         fill="forwards" 
-                         from="white" 
-                         to="red" 
-                         dur="0">
-                    </a-animation>
-                    <a-animation 
-                         begin="mouseleave" 
-                         easing="ease-in" 
-                         attribute="scale" 
-                         fill="forwards" 
-                         from="1 1 1" 
-                         to="2 2 2" 
-                         dur="300">
-                    </a-animation>
-                    <a-animation 
-                         begin="mouseleave" 
-                         attribute="color" 
-                         fill="forwards" 
-                         from="red" 
-                         to="black" 
-                         dur="0">
-                    </a-animation>
-                </a-cursor>
-        </a-camera>
+    <body style="margin:0px; overflow:hidden;"> 
 
 
         <!-- Assetの用意　 -->
@@ -68,6 +28,7 @@
             <a-asset-item id="3DModel" src="rupao.obj"></a-asset-item>
             <!-- マテリアル -->
             <a-asset-item id="Material" src="rupao.mtl"></a-asset-item>
+
 
             <!-- 3Dモデル Twitter -->
             <a-asset-item id="3DModel01" src="twitter.obj"></a-asset-item>
